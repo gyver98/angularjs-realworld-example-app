@@ -23,7 +23,7 @@ export default class User {
       (res) => {
         // Store the user's info for easy lookup
         this.current = res.data.user;
-
+        console.log("res : "+ this.current);
         return res;
       }
     );
